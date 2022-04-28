@@ -6,9 +6,9 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    popup: path.join(__dirname, "./src/popup.js"),
-    background: path.join(__dirname, "./src/background.js"),
-    options: path.join(__dirname, "./src/options.js"),
+    popup: path.join(__dirname, "./src/popup.ts"),
+    background: path.join(__dirname, "./src/background.ts"),
+    options: path.join(__dirname, "./src/options.ts"),
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -16,6 +16,9 @@ module.exports = {
   },
   resolve: {
     extensions: [".ts", ".js"],
+  },
+  module: {
+    rules: [{ test: /\.tsx?$/, loader: "ts-loader" }],
   },
   plugins: [
     new CleanWebpackPlugin({
