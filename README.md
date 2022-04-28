@@ -1,1 +1,1 @@
-# Chrome Tab Watching Extension
+# Chrome Extension
