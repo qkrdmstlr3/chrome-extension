@@ -1,24 +1,24 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    popup: path.join(__dirname, "./src/popup.ts"),
-    background: path.join(__dirname, "./src/background.ts"),
-    options: path.join(__dirname, "./src/options.ts"),
+    popup: path.join(__dirname, './src/popup.ts'),
+    background: path.join(__dirname, './src/background.ts'),
+    options: path.join(__dirname, './src/options.ts'),
   },
   output: {
-    path: path.resolve(__dirname, "./dist"),
-    filename: "[name].js",
+    path: path.resolve(__dirname, './dist'),
+    filename: '[name].js',
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: ['.ts', '.js'],
   },
   module: {
-    rules: [{ test: /\.tsx?$/, loader: "ts-loader" }],
+    rules: [{ test: /\.tsx?$/, loader: 'ts-loader' }],
   },
   plugins: [
     new CleanWebpackPlugin({
@@ -26,18 +26,20 @@ module.exports = {
       cleanStaleWebpackAssets: false,
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "./public/popup.html"),
-      filename: "popup.html",
+      template: path.join(__dirname, './public/popup.html'),
+      filename: 'popup.html',
+      inject: false,
     }),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "./public/options.html"),
-      filename: "options.html",
+      template: path.join(__dirname, './public/options.html'),
+      filename: 'options.html',
+      inject: false,
     }),
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.join(__dirname, "./public/manifest.json"),
-          to: path.join(__dirname, "./dist"),
+          from: path.join(__dirname, './public/manifest.json'),
+          to: path.join(__dirname, './dist'),
           force: true,
           // generates the manifest file using the package.json informations
           transform: (content, path) =>
@@ -49,17 +51,17 @@ module.exports = {
                   ...JSON.parse(content.toString()),
                 },
                 null,
-                "\t"
+                '\t'
               )
             ),
         },
       ],
     }),
   ],
-  devtool: "cheap-module-source-map",
+  devtool: 'cheap-module-source-map',
   devServer: {
     static: {
-      directory: path.join(__dirname, "../dist"),
+      directory: path.join(__dirname, '../dist'),
       watch: false,
     },
     devMiddleware: {
