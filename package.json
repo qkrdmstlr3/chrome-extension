@@ -1,7 +1,7 @@
 {
   "name": "chrome-extension",
   "version": "1.0.0",
-  "description": "Tab Control Extension",
+  "description": "For protecting your ears!",
   "scripts": {
     "start": "NODE_ENV=development webpack serve",
     "build": "NODE_ENV=production webpack "

@@ -18,9 +18,9 @@ class Background {
     const audibleTabs = await chrome.tabs.getAllAudibleTab();
     const alarmTimer = await this.alarmTimer.getMinute();
 
-    const isAlarm = !(alarmTimer % (this.LIMITED_MINUTE_UNIT / 6));
+    const isAlarm = alarmTimer && !(alarmTimer % (this.LIMITED_MINUTE_UNIT / 3));
     if (audibleTabs.length && isAlarm) {
-      // TODO: CHANGE WITH WINDOW
+      chrome.notifications.warn(`음악을 재생한지 ${alarmTimer}분이 지났어요!`);
     }
 
     //FIXME: For test alarmTimer minute
