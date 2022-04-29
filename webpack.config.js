@@ -41,11 +41,6 @@ module.exports = {
       filename: 'options.html',
       inject: false,
     }),
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, './public/alert.html'),
-      filename: 'alert.html',
-      inject: false,
-    }),
     new CopyWebpackPlugin({
       patterns: [
         {
