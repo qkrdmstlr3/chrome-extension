@@ -18,7 +18,13 @@ module.exports = {
     extensions: ['.ts', '.js'],
   },
   module: {
-    rules: [{ test: /\.tsx?$/, loader: 'ts-loader' }],
+    rules: [
+      { test: /\.tsx?$/, loader: 'ts-loader' },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [{ loader: 'file-loader' }],
+      },
+    ],
   },
   plugins: [
     new CleanWebpackPlugin({
@@ -33,6 +39,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, './public/options.html'),
       filename: 'options.html',
+      inject: false,
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, './public/alert.html'),
+      filename: 'alert.html',
       inject: false,
     }),
     new CopyWebpackPlugin({
