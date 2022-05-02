@@ -3,3 +3,4 @@ scripts
 webpack
 dist
 test
+coverage
