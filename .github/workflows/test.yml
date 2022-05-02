@@ -1,0 +1,13 @@
+name: Testing
+
+on: [pull_request]
+
+jobs:
+  Jest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: npm install
+        run: npm install
+      - name: npm run jest
+        run: npm run jest
