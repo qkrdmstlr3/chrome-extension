@@ -1,16 +1,17 @@
 import { createAlarm, clearAllAlarm, onAlarm } from '../alarms';
 
+const createMock = chrome.alarms.create as jest.MockedFunction<typeof chrome.alarms.create>;
+const clearAllAlarmMock = chrome.alarms.clearAll as jest.MockedFunction<typeof chrome.alarms.clearAll>;
+
 describe('Alarm test', () => {
   it('createAlarm test', () => {
-    const createAlarmMock = mockForV3('alarms.create');
     createAlarm(60);
 
-    expect(createAlarmMock).toBeCalledTimes(1);
-    expect(createAlarmMock).toBeCalledWith({ periodInMinutes: 60 });
+    expect(createMock).toBeCalledTimes(1);
+    expect(createMock).toBeCalledWith({ periodInMinutes: 60 });
   });
 
   it('clearAllAlarm test', () => {
-    const clearAllAlarmMock = mockForV3('alarms.clearAll');
     clearAllAlarm();
 
     expect(clearAllAlarmMock).toBeCalledTimes(1);
