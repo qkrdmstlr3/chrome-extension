@@ -61,6 +61,11 @@ module.exports = {
               )
             ),
         },
+        {
+          from: path.join(__dirname, './public/icon.png'),
+          to: path.join(__dirname, './dist'),
+          force: true,
+        },
       ],
     }),
   ],

@@ -2,11 +2,21 @@
   "name": "Sound Tab Control Extension",
   "description": "For protecting your ears!",
   "manifest_version": 3,
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "background": {
     "service_worker": "background.js"
   },
   "permissions": ["storage", "activeTab", "alarms", "tabs", "alarms", "notifications"],
   "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "24": "icon.png",
+      "32": "icon.png"
+    },
     "default_popup": "popup.html"
   },
   "options_page": "options.html"
