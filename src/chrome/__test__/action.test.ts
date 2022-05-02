@@ -8,6 +8,5 @@ describe('Action test', () => {
     await action.setBadgeText({ text: 'hello' });
 
     expect(looseScriptMock).toBeCalledTimes(1);
-    expect(3 + 3).toBe(6);
   });
 });
