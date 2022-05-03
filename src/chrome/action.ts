@@ -1,1 +1,1 @@
-export const setBadgeText = chrome.action.setBadgeText;
+export const setBadgeText = chrome.action && chrome.action.setBadgeText;

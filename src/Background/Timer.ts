@@ -1,7 +1,7 @@
 import * as chrome from '../chrome/index';
 
 class Timer {
-  timerName: string;
+  private timerName: string;
 
   constructor(timerName: string) {
     this.timerName = timerName;
