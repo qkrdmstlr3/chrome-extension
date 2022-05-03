@@ -3,7 +3,7 @@ import { createAlarm, clearAllAlarm, onAlarm } from '../alarms';
 const createMock = chrome.alarms.create as jest.MockedFunction<typeof chrome.alarms.create>;
 const clearAllAlarmMock = chrome.alarms.clearAll as jest.MockedFunction<typeof chrome.alarms.clearAll>;
 
-describe('Alarm test', () => {
+describe('Api/Alarm', () => {
   it('createAlarm test', () => {
     createAlarm(60);
 

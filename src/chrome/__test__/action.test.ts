@@ -1,4 +1,4 @@
-describe('Action test', () => {
+describe('Api/Action', () => {
   it('setBadgeText test', async () => {
     const looseScriptMock = mockForV3('action.setBadgeText');
     looseScriptMock.mockImplementation(async () => Promise.resolve());

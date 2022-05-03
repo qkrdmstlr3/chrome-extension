@@ -5,7 +5,7 @@ const setMock = chrome.storage.local.set as jest.MockedFunction<typeof chrome.st
 const KEY = 'key';
 const VALUE = 'value';
 
-describe('Storage test', () => {
+describe('Api/Storage', () => {
   it('get test', async () => {
     getMock.mockReturnValue({ [KEY]: VALUE } as any);
     const result = await get(KEY);

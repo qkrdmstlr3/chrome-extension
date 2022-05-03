@@ -6,7 +6,7 @@ beforeEach(() => {
   createMock.mockClear();
 });
 
-describe('Notification test', () => {
+describe('Api/Notification', () => {
   it('create test', async () => {
     const dummyObj = {
       type: 'basic' as chrome.notifications.TemplateType,
