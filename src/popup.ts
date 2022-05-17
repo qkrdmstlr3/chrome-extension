@@ -1,3 +1,3 @@
-// import PopUp from "./PopUp/index";
+import PopUp from './PopUp/index';
 
-// (() => new PopUp())();
+(() => new PopUp())();
