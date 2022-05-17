@@ -1,1 +1,1 @@
-# Chrome Extension
+# Ear Protector Extension

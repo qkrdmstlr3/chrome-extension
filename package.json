@@ -1,5 +1,5 @@
 {
-  "name": "chrome-extension",
+  "name": "ear-protector-extension",
   "version": "1.0.0",
   "description": "For protecting your ears!",
   "scripts": {
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qkrdmstlr3/chrome-extension.git"
+    "url": "git+https://github.com/qkrdmstlr3/ear-protector-extension.git"
   },
   "keywords": [],
   "author": "shellboy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/qkrdmstlr3/chrome-extension/issues"
+    "url": "https://github.com/qkrdmstlr3/ear-protector-extension/issues"
   },
-  "homepage": "https://github.com/qkrdmstlr3/chrome-extension#readme",
+  "homepage": "https://github.com/qkrdmstlr3/ear-protector-extension#readme",
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
