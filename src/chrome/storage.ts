@@ -5,3 +5,7 @@ export const get = async <T>(key: string): Promise<T> => {
 export const set = async <T>(key: string, value: T) => {
   await chrome.storage.local.set({ [key]: value });
 };
+
+export const clearAll = async () => {
+  await chrome.storage.local.clear();
+};
