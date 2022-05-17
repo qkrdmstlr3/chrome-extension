@@ -3,9 +3,9 @@
   "description": "For protecting your ears!",
   "manifest_version": 3,
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
+    "16": "icon.jpg",
+    "48": "icon.jpg",
+    "128": "icon.jpg"
   },
   "background": {
     "service_worker": "background.js"
@@ -13,9 +13,9 @@
   "permissions": ["storage", "activeTab", "alarms", "tabs", "alarms", "notifications"],
   "action": {
     "default_icon": {
-      "16": "icon.png",
-      "24": "icon.png",
-      "32": "icon.png"
+      "16": "icon.jpg",
+      "24": "icon.jpg",
+      "32": "icon.jpg"
     },
     "default_popup": "popup.html"
   },

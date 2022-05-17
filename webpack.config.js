@@ -62,7 +62,7 @@ module.exports = {
             ),
         },
         {
-          from: path.join(__dirname, './public/icon.png'),
+          from: path.join(__dirname, './public/icon.jpg'),
           to: path.join(__dirname, './dist'),
           force: true,
         },
