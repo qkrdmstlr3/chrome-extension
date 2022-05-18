@@ -10,7 +10,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage", "activeTab", "alarms", "tabs", "alarms", "notifications"],
+  "permissions": ["storage", "alarms", "tabs", "alarms", "notifications"],
   "action": {
     "default_icon": {
       "16": "icon.jpg",
