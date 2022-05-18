@@ -1,6 +1,6 @@
 {
-  "name": "Sound Tab Control Extension",
-  "description": "For protecting your ears!",
+  "name": "Ear Protector Extension",
+  "description": "An alarm tells you how long the sound has been playing!",
   "manifest_version": 3,
   "icons": {
     "16": "icon.jpg",
