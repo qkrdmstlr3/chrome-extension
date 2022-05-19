@@ -2,6 +2,10 @@
 
 ## User
 
+> Now Available in `Chrome Web Store`! 
+
+**▶️▶️▶️ [LINK](https://chrome.google.com/webstore/detail/ear-protector-extension/aomoholkhfjnlokjebampjkjfhfcddco) ◀️◀️◀️**
+
 ## Developer
 
 ### How to use? (EN)
