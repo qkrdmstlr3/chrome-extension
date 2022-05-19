@@ -1,8 +1,12 @@
 # Ear Protector Extension
 
+> Ear Protector Extension sends a alarm to the user who is listening in chrome every hour! If you stop sounding for 10 minutes, the timer is reset!
+
+> Ear Protector Extension은 1시간 간격으로 크롬으로 소리를 듣고 있는 사용자에게 알람을 보냅니다! 10분동안 소리를 멈추면 타이머가 초기화됩니다!
+
 ## User
 
-> Now Available in `Chrome Web Store`! 
+Now Available in `Chrome Web Store`! 
 
 **▶️▶️▶️ [LINK](https://chrome.google.com/webstore/detail/ear-protector-extension/aomoholkhfjnlokjebampjkjfhfcddco) ◀️◀️◀️**
 
