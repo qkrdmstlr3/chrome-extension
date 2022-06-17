@@ -21,7 +21,7 @@ describe('Api/Notification', () => {
   });
 
   it('warn test', () => {
-    warn('message');
+    warn(10);
 
     expect(createMock).toBeCalledTimes(1);
   });

@@ -27,7 +27,7 @@ class Background {
 
     const isAlarm = alarmTimerMinutes && !(alarmTimerMinutes % this.LIMITED_MINUTE_UNIT);
     if (audibleTabs.length) {
-      if (isAlarm) chrome.notifications.warn(`소리를 재생한지 ${alarmTimerMinutes}분이 지났어요!`);
+      if (isAlarm) chrome.notifications.warn(alarmTimerMinutes);
       this.alarmTimer.increaseMinute();
       this.stopTimer.initializeMinute();
     }
