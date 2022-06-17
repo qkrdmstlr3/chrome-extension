@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="button.css" />
   </head>
   <body>
     <style>
+      h2 {
+        margin: 5px 0 3px 0;
+      }
+      h3 {
+        margin: 20px 0 5px 0;
+      }
+      p {
+        margin: 3px 0;
+        line-height: 17px;
+        text-align: center;
+        word-break: keep-all;
+      }
+      .wrapper {
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+      }
+      .toggle-box {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+      }
+
+      .toggle-text {
+        font-size: 15px;
+      }
+
       /* The switch - the box around the slider */
       .switch {
         position: relative;
@@ -41,8 +71,6 @@
         left: 4px;
         bottom: 4px;
         background-color: white;
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
       }
 
       input:checked + .slider {
@@ -68,10 +96,20 @@
         border-radius: 50%;
       }
     </style>
-    <label class="switch">
-      <input type="checkbox" />
-      <span class="slider round"></span>
-    </label>
+    <div class="wrapper">
+      <h2>Ear Protector</h2>
+      <p>크롬을 사용해 소리를 재생중이라면 설정한 시간마다 알람을 보내드립니다!</p>
+      <p>소리가 중지되고 10분이 지나면 시간이 초기화됩니다!</p>
+      <h3>알람 활성화</h3>
+      <div class="toggle-box">
+        <span class="toggle-text">off</span>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <span class="toggle-text">on</span>
+      </div>
+    </div>
     <script src="popup.js"></script>
   </body>
 </html>
